@@ -10,7 +10,7 @@ composer create-project --prefer-dist laravel/laravel <YoutProjecName>
 <YoutProjecName>sudo chmod -R 777 storage
 
 ```
-**Create Virtual Host Files and set DocumentRoot value public folder of your project(<YoutProjecName>)**
+**Create [Virtual Host](http://www.unixmen.com/setup-apache-virtual-hosts-on-ubuntu-15-10/) Files and set DocumentRoot value public folder of your project-><YoutProjecName>**
 ```
 <VirtualHost *:80>
 ServerName <YoutProjecName>.dev
