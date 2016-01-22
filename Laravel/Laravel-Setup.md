@@ -1,5 +1,13 @@
 #Larave Setup
 
+#Installing The Quickstart (Optional)
+```
+git clone https://github.com/laravel/quickstart-basic quickstart
+cd quickstart
+composer install
+php artisan migrate
+```
+
 ##Installation
 ###Command
 ```
