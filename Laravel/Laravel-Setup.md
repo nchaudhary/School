@@ -3,7 +3,7 @@
 ##Installation
 ###Command
 ```
-composer create-project --prefer-dist laravel/laravel blog
+composer create-project --prefer-dist laravel/laravel <YoutProjecName>
 ```
 ###Directory Permissions
 ```
@@ -11,6 +11,23 @@ composer create-project --prefer-dist laravel/laravel blog
 
 ```
 **Create Virtual Host Files and set DocumentRoot value public folder of your project(<YoutProjecName>)**
+```
+<VirtualHost *:80>
+ServerName <YoutProjecName>.dev
+ServerAdmin webmaster@localhost
+DocumentRoot /home/user_name/projects/<YoutProjecName>/public
+
+<Directory "/home/user_name/projects/<YoutProjecName>/public">
+Order allow,deny
+AllowOverride All
+Allow from all
+Require all granted
+</Directory>
+
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
 
 ###Reload apache service and run your site at browser
 
