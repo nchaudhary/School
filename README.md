@@ -31,6 +31,21 @@ php artisan migrate
 ````
 Now your basic app setup.This ist the time to check your site at browser.
 
+###Set site environment and database setting and mail setting in .env file at root .
+APP_ENV=local
+
+DB_HOST=localhost
+DB_DATABASE=laravel-blog
+DB_USERNAME=root
+DB_PASSWORD=
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.test.com
+MAIL_PORT=465
+MAIL_USERNAME=test@test.com
+MAIL_PASSWORD=*****
+MAIL_ENCRYPTION=ssl(tsl)
+
 
 
 
